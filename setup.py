@@ -1,11 +1,16 @@
-from setuptools import setup, find_packages
+import setuptools
 
-setup(
+__version__ = "1.0.0"
+
+with open("README.md", "r") as f:
+    long_description = f.read()
+
+setuptools.setup(
     name='gregorian-months',
-    version='1.0.0',
-    description='Python Distribution Utilities',
+    version=__version__,
+    long_description=long_description,
+    description='Conduct with the Gregorian calendar months',
     author='Iftah Roichman',
-    # author_email='gward@python.net',
-    # url='https://www.python.org/sigs/distutils-sig/',
-    packages=find_packages(),
+    url='https://github.com/iftahro/gregorian-months',
+    packages=setuptools.find_packages()
 )
