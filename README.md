@@ -4,7 +4,7 @@ Conduct with the Gregorian calendar months
 
 ## Usage
 
-Get each month number by his name:
+Get each month number by its name:
 
 ```python
 from gregorian_months import get_number
@@ -15,7 +15,7 @@ get_number("January") # Will return `1`
 get_number("October") # Will return `10`
 ```
 
-The package is not case-sensitive:
+The package supports all cases:
 
 ```python
 from gregorian_months import get_number
