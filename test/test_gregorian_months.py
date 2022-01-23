@@ -1,6 +1,7 @@
 from gregorian_months import get_number
 import pytest
 
+
 def test_months():
     assert 1 == get_number("January"), "Should be 1"
     assert 2 == get_number("February"), "Should be 2"
@@ -59,6 +60,7 @@ def test_random_cased_months():
     assert 10 == get_number("OcTObER"), "Should be 10"
     assert 11 == get_number("noVEmBEr"), "Should be 11"
     assert 12 == get_number("DeCemBEr"), "Should be 12"
+
 
 def test_errors():
     with pytest.raises(TypeError):
